@@ -1,4 +1,4 @@
-﻿using System;
+﻿﻿using System;
 using System.Text;
 
 namespace TechJobsConsoleAutograded6
@@ -161,4 +161,3 @@ namespace TechJobsConsoleAutograded6
         }
     }
 }
-

@@ -1,4 +1,4 @@
-﻿using System;
+﻿﻿﻿using System;
 
 namespace TechJobsConsoleAutograded6
 {
@@ -132,11 +132,29 @@ namespace TechJobsConsoleAutograded6
             return choiceKeys[choiceIdx];
         }
 
-        // TODO: complete the PrintJobs method.
+       // TODO: complete the PrintJobs method.
+           // TODO: complete the PrintJobs method.
         public void PrintJobs(List<Dictionary<string, string>> someJobs)
-        {
-            Console.WriteLine("PrintJobs is not implemented yet");
+        { if(someJobs.Count > 0) {
+             // Iterate over each dictionary in the list
+            foreach (var job in someJobs)
+            {
+                Console.WriteLine(Environment.NewLine + "*****");
+
+                // Iterate over each key-value pair in the dictionary
+                foreach (var kvp in job)
+                {
+                    Console.WriteLine($"{kvp.Key}: {kvp.Value}");
+                }
+
+                Console.WriteLine("*****" );
+            }
+        }
+        else {
+            Console.WriteLine("No results");
+        }
+
+           
         }
     }
 }
-
